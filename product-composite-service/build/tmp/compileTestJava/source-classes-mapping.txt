@@ -1,0 +1,2 @@
+io/locngo/learning/microservices/product/composite/service/ProductCompositeApplicationTest.java
+ io.locngo.learning.microservices.product.composite.service.ProductCompositeApplicationTest

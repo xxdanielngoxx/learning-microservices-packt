@@ -1,0 +1,2 @@
+io/locngo/learning/microservices/review/service/ReviewApplicationTest.java
+ io.locngo.learning.microservices.review.service.ReviewApplicationTest

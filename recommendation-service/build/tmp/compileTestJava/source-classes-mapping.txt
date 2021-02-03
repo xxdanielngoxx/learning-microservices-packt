@@ -1,0 +1,2 @@
+io/locngo/learning/microservices/recommendation/service/RecommendationApplicationTest.java
+ io.locngo.learning.microservices.recommendation.service.RecommendationApplicationTest
