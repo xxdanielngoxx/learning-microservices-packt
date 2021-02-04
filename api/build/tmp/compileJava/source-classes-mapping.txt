@@ -1,22 +1,22 @@
 io/locngo/learning/microservices/api/core/product/Product.java
  io.locngo.learning.microservices.api.core.product.Product
-io/locngo/learning/microservices/api/core/product/ProductService.java
- io.locngo.learning.microservices.api.core.product.ProductService
-io/locngo/learning/microservices/api/core/review/ReviewService.java
- io.locngo.learning.microservices.api.core.review.ReviewService
+io/locngo/learning/microservices/api/core/recommendation/RecommendationService.java
+ io.locngo.learning.microservices.api.core.recommendation.RecommendationService
+io/locngo/learning/microservices/api/composite/product/RecommendationSummary.java
+ io.locngo.learning.microservices.api.composite.product.RecommendationSummary
 io/locngo/learning/microservices/api/composite/product/ProductAggregate.java
  io.locngo.learning.microservices.api.composite.product.ProductAggregate
 io/locngo/learning/microservices/api/composite/product/ServiceAddresses.java
  io.locngo.learning.microservices.api.composite.product.ServiceAddresses
-io/locngo/learning/microservices/api/core/recommendation/Recommendation.java
- io.locngo.learning.microservices.api.core.recommendation.Recommendation
+io/locngo/learning/microservices/api/core/product/ProductService.java
+ io.locngo.learning.microservices.api.core.product.ProductService
 io/locngo/learning/microservices/api/composite/product/ProductCompositeService.java
  io.locngo.learning.microservices.api.composite.product.ProductCompositeService
 io/locngo/learning/microservices/api/core/review/Review.java
  io.locngo.learning.microservices.api.core.review.Review
 io/locngo/learning/microservices/api/composite/product/ReviewSummary.java
  io.locngo.learning.microservices.api.composite.product.ReviewSummary
-io/locngo/learning/microservices/api/core/recommendation/RecommendationService.java
- io.locngo.learning.microservices.api.core.recommendation.RecommendationService
-io/locngo/learning/microservices/api/composite/product/RecommendationSummary.java
- io.locngo.learning.microservices.api.composite.product.RecommendationSummary
+io/locngo/learning/microservices/api/core/recommendation/Recommendation.java
+ io.locngo.learning.microservices.api.core.recommendation.Recommendation
+io/locngo/learning/microservices/api/core/review/ReviewService.java
+ io.locngo.learning.microservices.api.core.review.ReviewService
