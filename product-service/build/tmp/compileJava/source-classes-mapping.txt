@@ -1,4 +1,10 @@
 io/locngo/learning/microservices/product/service/ProductApplication.java
  io.locngo.learning.microservices.product.service.ProductApplication
+io/locngo/learning/microservices/product/service/persistence/ProductEntity.java
+ io.locngo.learning.microservices.product.service.persistence.ProductEntity
+io/locngo/learning/microservices/product/service/persistence/ProductRepository.java
+ io.locngo.learning.microservices.product.service.persistence.ProductRepository
 io/locngo/learning/microservices/product/service/services/ProductServiceImpl.java
  io.locngo.learning.microservices.product.service.services.ProductServiceImpl
+io/locngo/learning/microservices/product/service/services/ProductMapper.java
+ io.locngo.learning.microservices.product.service.services.ProductMapper

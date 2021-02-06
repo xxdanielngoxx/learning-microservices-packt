@@ -1,2 +1,9 @@
 Manifest-Version: 1.0
+Spring-Boot-Classpath-Index: BOOT-INF/classpath.idx
+Start-Class: io.locngo.learning.microservices.product.service.ProductA
+ pplication
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+Spring-Boot-Version: 2.3.8.RELEASE
+Main-Class: org.springframework.boot.loader.JarLauncher
 

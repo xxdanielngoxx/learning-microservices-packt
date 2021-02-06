@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">5</div>
+<div class="counter">7</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.449s</div>
+<div class="counter">0.534s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,28 +78,38 @@
 </tr>
 </thead>
 <tr>
-<td class="success">getRecommendationsInvalidParameter</td>
-<td class="success">0.398s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">getReviewsByProductId</td>
-<td class="success">0.013s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">getReviewsInvalidParameterNegativeValue</td>
+<td class="success">deleteReviews</td>
 <td class="success">0.026s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">duplicateError</td>
+<td class="success">0.024s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getRecommendationsInvalidParameter</td>
+<td class="success">0.357s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getReviewsByProductId</td>
+<td class="success">0.086s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getReviewsInvalidParameterNegativeValue</td>
+<td class="success">0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">getReviewsMissingParameter</td>
-<td class="success">0.006s</td>
+<td class="success">0.008s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getReviewsNotFound</td>
-<td class="success">0.006s</td>
+<td class="success">0.008s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,37 +117,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>18:02:45.307 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.313 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-18:02:45.320 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-18:02:45.351 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-18:02:45.364 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest], using SpringBootContextLoader
-18:02:45.367 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]: class path resource [io/locngo/learning/microservices/review/service/ReviewApplicationTest-context.xml] does not exist
-18:02:45.368 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]: class path resource [io/locngo/learning/microservices/review/service/ReviewApplicationTestContext.groovy] does not exist
-18:02:45.368 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-18:02:45.369 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]: ReviewApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-18:02:45.406 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.468 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\master_java\learning-microservices\review-service\build\classes\java\main\io\locngo\learning\microservices\review\service\ReviewApplication.class]
-18:02:45.469 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.locngo.learning.microservices.review.service.ReviewApplication for test class io.locngo.learning.microservices.review.service.ReviewApplicationTest
-18:02:45.556 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]: using defaults.
-18:02:45.557 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-18:02:45.564 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
-18:02:45.565 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-18:02:45.566 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-18:02:45.566 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@338134b1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5abcbfa0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66fa8b24, org.springframework.test.context.support.DirtiesContextTestExecutionListener@174865f2, org.springframework.test.context.event.EventPublishingTestExecutionListener@2d56ff16, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@12a804a3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@20391e79, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@740a9879, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6e3e67a1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3c61fbd9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@54c3f0fa]
-18:02:45.567 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.568 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.569 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.569 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.571 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.571 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.571 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.571 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.576 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1746e316 testClass = ReviewApplicationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@4cfb2dc5 testClass = ReviewApplicationTest, locations = '{}', classes = '{class io.locngo.learning.microservices.review.service.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@60bc33bb, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@233ca41d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@680a256d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@a1c67b3, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@6d92310c, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@6d4f942c], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
-18:02:45.578 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.578 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]
-18:02:45.581 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@1746e316 testClass = ReviewApplicationTest, testInstance = io.locngo.learning.microservices.review.service.ReviewApplicationTest@12937a3f, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@4cfb2dc5 testClass = ReviewApplicationTest, locations = '{}', classes = '{class io.locngo.learning.microservices.review.service.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@60bc33bb, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@233ca41d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@680a256d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@a1c67b3, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@6d92310c, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@6d4f942c], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
-18:02:45.598 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+<pre>2021-02-06 11:44:31.311  INFO 12368 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest], using SpringBootContextLoader
+2021-02-06 11:44:31.312  INFO 12368 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-06 11:44:31.312  INFO 12368 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [io.locngo.learning.microservices.review.service.ReviewApplicationTest]: ReviewApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-06 11:44:31.313  INFO 12368 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration io.locngo.learning.microservices.review.service.ReviewApplication for test class io.locngo.learning.microservices.review.service.ReviewApplicationTest
+2021-02-06 11:44:31.316  INFO 12368 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-06 11:44:31.317  INFO 12368 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@76f8031e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1d1d1e4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2e3ef52c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13dfaa25, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2509abb3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a581007, org.springframework.test.context.event.EventPublishingTestExecutionListener@731607f5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1df60530, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@754a610e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1ff88f88, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c121a2d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@71604b1a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@57840629]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -147,15 +132,137 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.3.8.RELEASE)
 
-2021-02-04 18:02:45.858  INFO 18332 --- [    Test worker] i.l.l.m.r.service.ReviewApplicationTest  : Starting ReviewApplicationTest on LAPTOP-J4BOEGNR with PID 18332 (started by ASUS in D:\master_java\learning-microservices\review-service)
-2021-02-04 18:02:45.859 DEBUG 18332 --- [    Test worker] i.l.l.m.r.service.ReviewApplicationTest  : Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-02-04 18:02:45.859  INFO 18332 --- [    Test worker] i.l.l.m.r.service.ReviewApplicationTest  : No active profile set, falling back to default profiles: default
-2021-02-04 18:02:47.095  INFO 18332 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
-2021-02-04 18:02:48.123  INFO 18332 --- [    Test worker] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 57225
-2021-02-04 18:02:48.132  INFO 18332 --- [    Test worker] i.l.l.m.r.service.ReviewApplicationTest  : Started ReviewApplicationTest in 2.532 seconds (JVM running for 3.683)
-2021-02-04 18:02:48.576 DEBUG 18332 --- [ctor-http-nio-3] l.m.u.h.GlobalControllerExceptionHandler : Returning HTTP status: 422 UNPROCESSABLE_ENTITY for path, message: Invalid productId: -1
-2021-02-04 18:02:48.598 DEBUG 18332 --- [ctor-http-nio-3] i.l.l.m.r.s.services.ReviewServiceImpl   : /reviews response size: 3
-2021-02-04 18:02:48.617 DEBUG 18332 --- [ctor-http-nio-3] i.l.l.m.r.s.services.ReviewServiceImpl   : No reviews found for productId: 213
+2021-02-06 11:44:31.347  INFO 12368 --- [    Test worker] i.l.l.m.r.service.ReviewApplicationTest  : Starting ReviewApplicationTest on LAPTOP-J4BOEGNR with PID 12368 (started by ASUS in D:\master_java\learning-microservices\review-service)
+2021-02-06 11:44:31.347 DEBUG 12368 --- [    Test worker] i.l.l.m.r.service.ReviewApplicationTest  : Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
+2021-02-06 11:44:31.347  INFO 12368 --- [    Test worker] i.l.l.m.r.service.ReviewApplicationTest  : No active profile set, falling back to default profiles: default
+2021-02-06 11:44:31.666  INFO 12368 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-06 11:44:31.673  INFO 12368 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 1 JPA repository interfaces.
+2021-02-06 11:44:32.042  INFO 12368 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-06 11:44:32.046  INFO 12368 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-06 11:44:32.058  INFO 12368 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-06 11:44:32.064  INFO 12368 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-06 11:44:32.097 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : create table reviews (id integer not null, author varchar(255), content varchar(255), product_id integer not null, review_id integer not null, subject varchar(255), version integer not null, primary key (id))
+2021-02-06 11:44:32.097 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : alter table reviews drop constraint if exists reviews_unique_idx
+2021-02-06 11:44:32.098 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : alter table reviews add constraint reviews_unique_idx unique (product_id, review_id)
+2021-02-06 11:44:32.098 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : create sequence hibernate_sequence start with 1 increment by 1
+2021-02-06 11:44:32.098  INFO 12368 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-06 11:44:32.098  INFO 12368 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-06 11:44:32.620  INFO 12368 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-02-06 11:44:33.563  INFO 12368 --- [    Test worker] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 51601
+2021-02-06 11:44:33.570  INFO 12368 --- [    Test worker] i.l.l.m.r.service.ReviewApplicationTest  : Started ReviewApplicationTest in 2.251 seconds (JVM running for 6.233)
+2021-02-06 11:44:33.609 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_
+2021-02-06 11:44:33.963 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_
+2021-02-06 11:44:33.971 DEBUG 12368 --- [ctor-http-nio-3] l.m.u.h.GlobalControllerExceptionHandler : Returning HTTP status: 422 UNPROCESSABLE_ENTITY for path, message: Invalid productId: -1
+2021-02-06 11:44:33.988 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_
+2021-02-06 11:44:33.991 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_ where reviewenti0_.product_id=?
+2021-02-06 11:44:33.991 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2021-02-06 11:44:34.041 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : call next value for hibernate_sequence
+2021-02-06 11:44:34.042 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : insert into reviews (author, content, product_id, review_id, subject, version, id) values (?, ?, ?, ?, ?, ?, ?)
+2021-02-06 11:44:34.042 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Author 1]
+2021-02-06 11:44:34.043 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Content 1]
+2021-02-06 11:44:34.043 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [1]
+2021-02-06 11:44:34.043 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [INTEGER] - [1]
+2021-02-06 11:44:34.043 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Subject 1]
+2021-02-06 11:44:34.043 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [INTEGER] - [0]
+2021-02-06 11:44:34.043 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [1]
+2021-02-06 11:44:34.044 DEBUG 12368 --- [ctor-http-nio-3] i.l.l.m.r.s.services.ReviewServiceImpl   : createReview: created a review entity: 1/1
+2021-02-06 11:44:34.049 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : call next value for hibernate_sequence
+2021-02-06 11:44:34.049 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : insert into reviews (author, content, product_id, review_id, subject, version, id) values (?, ?, ?, ?, ?, ?, ?)
+2021-02-06 11:44:34.050 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Author 2]
+2021-02-06 11:44:34.050 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Content 2]
+2021-02-06 11:44:34.050 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [1]
+2021-02-06 11:44:34.050 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [INTEGER] - [2]
+2021-02-06 11:44:34.050 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Subject 2]
+2021-02-06 11:44:34.050 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [INTEGER] - [0]
+2021-02-06 11:44:34.050 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [2]
+2021-02-06 11:44:34.050 DEBUG 12368 --- [ctor-http-nio-3] i.l.l.m.r.s.services.ReviewServiceImpl   : createReview: created a review entity: 1/2
+2021-02-06 11:44:34.056 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : call next value for hibernate_sequence
+2021-02-06 11:44:34.057 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : insert into reviews (author, content, product_id, review_id, subject, version, id) values (?, ?, ?, ?, ?, ?, ?)
+2021-02-06 11:44:34.057 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Author 3]
+2021-02-06 11:44:34.057 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Content 3]
+2021-02-06 11:44:34.057 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [1]
+2021-02-06 11:44:34.057 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [INTEGER] - [3]
+2021-02-06 11:44:34.057 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Subject 3]
+2021-02-06 11:44:34.057 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [INTEGER] - [0]
+2021-02-06 11:44:34.057 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [3]
+2021-02-06 11:44:34.058 DEBUG 12368 --- [ctor-http-nio-3] i.l.l.m.r.s.services.ReviewServiceImpl   : createReview: created a review entity: 1/3
+2021-02-06 11:44:34.059 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_ where reviewenti0_.product_id=?
+2021-02-06 11:44:34.060 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2021-02-06 11:44:34.063 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_ where reviewenti0_.product_id=?
+2021-02-06 11:44:34.063 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2021-02-06 11:44:34.065 DEBUG 12368 --- [ctor-http-nio-3] i.l.l.m.r.s.services.ReviewServiceImpl   : getReviews: response size: 3
+2021-02-06 11:44:34.074 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_
+2021-02-06 11:44:34.075 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=? and version=?
+2021-02-06 11:44:34.076 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2021-02-06 11:44:34.076 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [0]
+2021-02-06 11:44:34.076 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=? and version=?
+2021-02-06 11:44:34.076 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [2]
+2021-02-06 11:44:34.076 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [0]
+2021-02-06 11:44:34.076 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=? and version=?
+2021-02-06 11:44:34.076 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [3]
+2021-02-06 11:44:34.076 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [0]
+2021-02-06 11:44:34.079 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select count(*) as col_0_0_ from reviews reviewenti0_
+2021-02-06 11:44:34.082 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : call next value for hibernate_sequence
+2021-02-06 11:44:34.082 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : insert into reviews (author, content, product_id, review_id, subject, version, id) values (?, ?, ?, ?, ?, ?, ?)
+2021-02-06 11:44:34.082 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Author 1]
+2021-02-06 11:44:34.082 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Content 1]
+2021-02-06 11:44:34.082 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [1]
+2021-02-06 11:44:34.082 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [INTEGER] - [1]
+2021-02-06 11:44:34.083 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Subject 1]
+2021-02-06 11:44:34.083 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [INTEGER] - [0]
+2021-02-06 11:44:34.083 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [4]
+2021-02-06 11:44:34.083 DEBUG 12368 --- [ctor-http-nio-3] i.l.l.m.r.s.services.ReviewServiceImpl   : createReview: created a review entity: 1/1
+2021-02-06 11:44:34.085 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select count(*) as col_0_0_ from reviews reviewenti0_
+2021-02-06 11:44:34.090 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : call next value for hibernate_sequence
+2021-02-06 11:44:34.091 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : insert into reviews (author, content, product_id, review_id, subject, version, id) values (?, ?, ?, ?, ?, ?, ?)
+2021-02-06 11:44:34.091 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Author 1]
+2021-02-06 11:44:34.091 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Content 1]
+2021-02-06 11:44:34.091 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [1]
+2021-02-06 11:44:34.091 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [INTEGER] - [1]
+2021-02-06 11:44:34.091 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Subject 1]
+2021-02-06 11:44:34.091 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [INTEGER] - [0]
+2021-02-06 11:44:34.091 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [5]
+2021-02-06 11:44:34.091  WARN 12368 --- [ctor-http-nio-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
+2021-02-06 11:44:34.091 ERROR 12368 --- [ctor-http-nio-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: &quot;PUBLIC.REVIEWS_UNIQUE_IDX_INDEX_6 ON PUBLIC.REVIEWS(PRODUCT_ID, REVIEW_ID) VALUES 4&quot;; SQL statement:
+insert into reviews (author, content, product_id, review_id, subject, version, id) values (?, ?, ?, ?, ?, ?, ?) [23505-200]
+2021-02-06 11:44:34.093 DEBUG 12368 --- [ctor-http-nio-3] l.m.u.h.GlobalControllerExceptionHandler : Returning HTTP status: 422 UNPROCESSABLE_ENTITY for path, message: Duplicate key, Product Id: 1, Review Id: 1
+2021-02-06 11:44:34.095 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select count(*) as col_0_0_ from reviews reviewenti0_
+2021-02-06 11:44:34.099 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_
+2021-02-06 11:44:34.099 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : delete from reviews where id=? and version=?
+2021-02-06 11:44:34.100 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [4]
+2021-02-06 11:44:34.100 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [0]
+2021-02-06 11:44:34.107 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_
+2021-02-06 11:44:34.108 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_ where reviewenti0_.product_id=?
+2021-02-06 11:44:34.108 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2021-02-06 11:44:34.112 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : call next value for hibernate_sequence
+2021-02-06 11:44:34.113 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : insert into reviews (author, content, product_id, review_id, subject, version, id) values (?, ?, ?, ?, ?, ?, ?)
+2021-02-06 11:44:34.113 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Author 1]
+2021-02-06 11:44:34.113 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Content 1]
+2021-02-06 11:44:34.113 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [INTEGER] - [1]
+2021-02-06 11:44:34.113 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [INTEGER] - [1]
+2021-02-06 11:44:34.113 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Subject 1]
+2021-02-06 11:44:34.114 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [INTEGER] - [0]
+2021-02-06 11:44:34.114 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [6]
+2021-02-06 11:44:34.114 DEBUG 12368 --- [ctor-http-nio-3] i.l.l.m.r.s.services.ReviewServiceImpl   : createReview: created a review entity: 1/1
+2021-02-06 11:44:34.116 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_ where reviewenti0_.product_id=?
+2021-02-06 11:44:34.116 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2021-02-06 11:44:34.118 DEBUG 12368 --- [ctor-http-nio-3] i.l.l.m.r.s.services.ReviewServiceImpl   : deleteReviews: tries to delete reviews for the product with productId: 1
+2021-02-06 11:44:34.119 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_ where reviewenti0_.product_id=?
+2021-02-06 11:44:34.119 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2021-02-06 11:44:34.120 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_0_, reviewenti0_.author as author2_0_0_, reviewenti0_.content as content3_0_0_, reviewenti0_.product_id as product_4_0_0_, reviewenti0_.review_id as review_i5_0_0_, reviewenti0_.subject as subject6_0_0_, reviewenti0_.version as version7_0_0_ from reviews reviewenti0_ where reviewenti0_.id=?
+2021-02-06 11:44:34.120 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [6]
+2021-02-06 11:44:34.121 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : delete from reviews where id=? and version=?
+2021-02-06 11:44:34.121 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [6]
+2021-02-06 11:44:34.121 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [0]
+2021-02-06 11:44:34.125 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_ where reviewenti0_.product_id=?
+2021-02-06 11:44:34.125 TRACE 12368 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2021-02-06 11:44:34.126 DEBUG 12368 --- [ctor-http-nio-3] i.l.l.m.r.s.services.ReviewServiceImpl   : deleteReviews: tries to delete reviews for the product with productId: 1
+2021-02-06 11:44:34.127 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_ where reviewenti0_.product_id=?
+2021-02-06 11:44:34.127 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2021-02-06 11:44:34.133 DEBUG 12368 --- [    Test worker] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_
+2021-02-06 11:44:34.136 DEBUG 12368 --- [ctor-http-nio-3] org.hibernate.SQL                        : select reviewenti0_.id as id1_0_, reviewenti0_.author as author2_0_, reviewenti0_.content as content3_0_, reviewenti0_.product_id as product_4_0_, reviewenti0_.review_id as review_i5_0_, reviewenti0_.subject as subject6_0_, reviewenti0_.version as version7_0_ from reviews reviewenti0_ where reviewenti0_.product_id=?
+2021-02-06 11:44:34.136 TRACE 12368 --- [ctor-http-nio-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [213]
+2021-02-06 11:44:34.137 DEBUG 12368 --- [ctor-http-nio-3] i.l.l.m.r.s.services.ReviewServiceImpl   : getReviews: response size: 0
 </pre>
 </span>
 </div>
@@ -167,7 +274,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7</a> at Feb 4, 2021 6:02:50 PM</p>
+<a href="http://www.gradle.org">Gradle 6.7</a> at Feb 6, 2021 11:44:36 AM</p>
 </div>
 </div>
 </body>

@@ -1,4 +1,10 @@
 io/locngo/learning/microservices/review/service/ReviewApplication.java
  io.locngo.learning.microservices.review.service.ReviewApplication
+io/locngo/learning/microservices/review/service/services/ReviewMapper.java
+ io.locngo.learning.microservices.review.service.services.ReviewMapper
 io/locngo/learning/microservices/review/service/services/ReviewServiceImpl.java
  io.locngo.learning.microservices.review.service.services.ReviewServiceImpl
+io/locngo/learning/microservices/review/service/persistence/ReviewEntity.java
+ io.locngo.learning.microservices.review.service.persistence.ReviewEntity
+io/locngo/learning/microservices/review/service/persistence/ReviewRepository.java
+ io.locngo.learning.microservices.review.service.persistence.ReviewRepository

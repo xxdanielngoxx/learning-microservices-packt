@@ -1,2 +1,6 @@
 io/locngo/learning/microservices/product/service/ProductApplicationTest.java
  io.locngo.learning.microservices.product.service.ProductApplicationTest
+io/locngo/learning/microservices/product/service/MapperTests.java
+ io.locngo.learning.microservices.product.service.MapperTests
+io/locngo/learning/microservices/product/service/PersistenceTests.java
+ io.locngo.learning.microservices.product.service.PersistenceTests

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class io.locngo.learning.microservices.recommendation.service.PersistenceTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class io.locngo.learning.microservices.recommendation.service.PersistenceTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.locngo.learning.microservices.recommendation.service.html">io.locngo.learning.microservices.recommendation.service</a> &gt; PersistenceTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.249s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">create</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delete</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getRecommendationsById</td>
+<td class="success">0.204s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">optimisticLockError</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">update</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:51:09.487 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.494 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:51:09.501 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:51:09.550 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [io.locngo.learning.microservices.recommendation.service.PersistenceTests] from class [org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTestContextBootstrapper]
+11:51:09.569 [Test worker] INFO org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [io.locngo.learning.microservices.recommendation.service.PersistenceTests], using SpringBootContextLoader
+11:51:09.573 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]: class path resource [io/locngo/learning/microservices/recommendation/service/PersistenceTests-context.xml] does not exist
+11:51:09.573 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]: class path resource [io/locngo/learning/microservices/recommendation/service/PersistenceTestsContext.groovy] does not exist
+11:51:09.574 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:51:09.574 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]: PersistenceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:51:09.627 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.694 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\master_java\learning-microservices\recommendation-service\build\classes\java\main\io\locngo\learning\microservices\recommendation\service\RecommendationApplication.class]
+11:51:09.695 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.locngo.learning.microservices.recommendation.service.RecommendationApplication for test class io.locngo.learning.microservices.recommendation.service.PersistenceTests
+11:51:09.699 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTestContextBootstrapper - @TestExecutionListeners is not present for class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]: using defaults.
+11:51:09.700 [Test worker] INFO org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11:51:09.709 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+11:51:09.718 [Test worker] INFO org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@717f9f3e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@31acbda5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@604f0feb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@18c01218, org.springframework.test.context.transaction.TransactionalTestExecutionListener@154bf851, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@41de2ec8, org.springframework.test.context.event.EventPublishingTestExecutionListener@59f6514f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@41bec8bb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@b7d29ad, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3be5fe64, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@50f2bc7e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@673e4dcb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@56c20c0]
+11:51:09.721 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.722 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.723 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.723 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.723 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.723 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.723 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.723 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.728 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@b29c8a8 testClass = PersistenceTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1ed1a4db testClass = PersistenceTests, locations = '{}', classes = '{class io.locngo.learning.microservices.recommendation.service.RecommendationApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3c17c546, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@83c9db09, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1017fe88, [ImportsContextCustomizer@3d3b5efc key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoReactiveDataAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoReactiveRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration, org.springframework.boot.autoconfigure.mongo.MongoReactiveAutoConfiguration, org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60e79444, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@a57d3d6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+11:51:09.732 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.732 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.recommendation.service.PersistenceTests]
+11:51:09.737 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@b29c8a8 testClass = PersistenceTests, testInstance = io.locngo.learning.microservices.recommendation.service.PersistenceTests@1030d70a, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1ed1a4db testClass = PersistenceTests, locations = '{}', classes = '{class io.locngo.learning.microservices.recommendation.service.RecommendationApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3c17c546, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@83c9db09, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1017fe88, [ImportsContextCustomizer@3d3b5efc key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoReactiveDataAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoReactiveRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.data.mongo.MongoRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration, org.springframework.boot.autoconfigure.mongo.MongoReactiveAutoConfiguration, org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60e79444, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@a57d3d6, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+11:51:09.765 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.8.RELEASE)
+
+2021-02-06 11:51:10.133  INFO 15420 --- [    Test worker] i.l.l.m.r.service.PersistenceTests       : Starting PersistenceTests on LAPTOP-J4BOEGNR with PID 15420 (started by ASUS in D:\master_java\learning-microservices\recommendation-service)
+2021-02-06 11:51:10.134 DEBUG 15420 --- [    Test worker] i.l.l.m.r.service.PersistenceTests       : Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
+2021-02-06 11:51:10.136  INFO 15420 --- [    Test worker] i.l.l.m.r.service.PersistenceTests       : No active profile set, falling back to default profiles: default
+2021-02-06 11:51:10.420  INFO 15420 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-06 11:51:10.581  INFO 15420 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157ms. Found 1 MongoDB repository interfaces.
+2021-02-06 11:51:11.084  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2021-02-06 11:51:11.118  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.118+0700 I CONTROL  [initandlisten] MongoDB starting : pid=8724 port=27017 dbpath=C:\Users\ASUS\AppData\Local\Temp\embedmongo-db-858450b9-41f9-493e-ab6a-f566a651e8d6 64-bit host=LAPTOP-J4BOEGNR
+2021-02-06 11:51:11.118  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.118+0700 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2021-02-06 11:51:11.118  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.118+0700 I CONTROL  [initandlisten] db version v3.5.5
+2021-02-06 11:51:11.118  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.118+0700 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2021-02-06 11:51:11.119  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.118+0700 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-02-06 11:51:11.119  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.118+0700 I CONTROL  [initandlisten] modules: none
+2021-02-06 11:51:11.119  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.118+0700 I CONTROL  [initandlisten] build environment:
+2021-02-06 11:51:11.119  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.118+0700 I CONTROL  [initandlisten]     distarch: x86_64
+2021-02-06 11:51:11.119  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.118+0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-02-06 11:51:11.119  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.118+0700 I CONTROL  [initandlisten] options: { net: { bindIp: &quot;127.0.0.1&quot;, http: { enabled: false }, port: 27017 }, security: { authorization: &quot;disabled&quot; }, storage: { dbPath: &quot;C:\Users\ASUS\AppData\Local\Temp\embedmongo-db-858450b9-41f9-493e-ab6a-f566a651e8d6&quot;, journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2021-02-06 11:51:11.120  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.119+0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=11701M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2021-02-06 11:51:11.212  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.212+0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2021-02-06 11:51:11.212  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.212+0700 I CONTROL  [initandlisten] 
+2021-02-06 11:51:11.212  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.212+0700 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2021-02-06 11:51:11.213  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.212+0700 I CONTROL  [initandlisten] **       Not recommended for production.
+2021-02-06 11:51:11.213  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.212+0700 I CONTROL  [initandlisten] 
+2021-02-06 11:51:11.463  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.463+0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/ASUS/AppData/Local/Temp/embedmongo-db-858450b9-41f9-493e-ab6a-f566a651e8d6/diagnostic.data'
+2021-02-06 11:51:11.514  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.514+0700 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: &quot;incompatible_with_version_32&quot;, ns: &quot;admin.system.version&quot; }
+2021-02-06 11:51:11.514  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.514+0700 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2021-02-06 11:51:11.518  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.519+0700 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2021-02-06 11:51:11.519  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.519+0700 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2021-02-06 11:51:11.519  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.520+0700 I NETWORK  [thread1] waiting for connections on port 27017
+2021-02-06 11:51:11.520  INFO 15420 --- [    Test worker] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3237c8
+2021-02-06 11:51:11.577  INFO 15420 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-06 11:51:11.608  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.608+0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:51936 #1 (1 connection now open)
+2021-02-06 11:51:11.615  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.615+0700 I NETWORK  [conn1] received client metadata from 127.0.0.1:51936 conn1: { driver: { name: &quot;mongo-java-driver|sync|spring-boot&quot;, version: &quot;4.0.5&quot; }, os: { type: &quot;Windows&quot;, name: &quot;Windows 10&quot;, architecture: &quot;amd64&quot;, version: &quot;10.0&quot; }, platform: &quot;Java/Oracle Corporation/1.8.0_271-b09&quot; }
+2021-02-06 11:51:11.625  INFO 15420 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2021-02-06 11:51:11.628  INFO 15420 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1049100}
+2021-02-06 11:51:11.987  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.987+0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:51937 #2 (2 connections now open)
+2021-02-06 11:51:11.987  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:11.987+0700 I NETWORK  [conn2] received client metadata from 127.0.0.1:51937 conn2: { driver: { name: &quot;mongo-java-driver|sync|spring-boot&quot;, version: &quot;4.0.5&quot; }, os: { type: &quot;Windows&quot;, name: &quot;Windows 10&quot;, architecture: &quot;amd64&quot;, version: &quot;10.0&quot; }, platform: &quot;Java/Oracle Corporation/1.8.0_271-b09&quot; }
+2021-02-06 11:51:11.988  INFO 15420 --- [    Test worker] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2021-02-06 11:51:12.046  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:12.046+0700 I INDEX    [conn2] build index on: recommendation-db.recommendation properties: { v: 2, unique: true, key: { productId: 1, recommendationId: 1 }, name: &quot;prod-rec-id&quot;, ns: &quot;recommendation-db.recommendation&quot; }
+2021-02-06 11:51:12.046  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:12.046+0700 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2021-02-06 11:51:12.050  INFO 15420 --- [       Thread-5] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:51:12.050+0700 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2021-02-06 11:51:12.053  INFO 15420 --- [    Test worker] i.l.l.m.r.service.PersistenceTests       : Started PersistenceTests in 2.285 seconds (JVM running for 3.697)
+2021-02-06 11:51:12.189 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Remove using query: {} in collection: recommendation.
+2021-02-06 11:51:12.221 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendation
+2021-02-06 11:51:12.238 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : find using query: { &quot;productId&quot; : 1} fields: Document{{}} for class: class io.locngo.learning.microservices.recommendation.service.persistence.RecommendationEntity in collection: recommendation
+2021-02-06 11:51:12.264 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Remove using query: {} in collection: recommendation.
+2021-02-06 11:51:12.265 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendation
+2021-02-06 11:51:12.267 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { &quot;id&quot; : &quot;601e204089ab1a55ec58e03a&quot;} fields: Document{{}} for class: class io.locngo.learning.microservices.recommendation.service.persistence.RecommendationEntity in collection: recommendation
+2021-02-06 11:51:12.268 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;601e204089ab1a55ec58e03a&quot;}} fields: {} in db.collection: recommendation-db.recommendation
+2021-02-06 11:51:12.270 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { &quot;id&quot; : &quot;601e204089ab1a55ec58e03a&quot;} fields: Document{{}} for class: class io.locngo.learning.microservices.recommendation.service.persistence.RecommendationEntity in collection: recommendation
+2021-02-06 11:51:12.270 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;601e204089ab1a55ec58e03a&quot;}} fields: {} in db.collection: recommendation-db.recommendation
+2021-02-06 11:51:12.274 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Calling update using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;601e204089ab1a55ec58e03a&quot;}, &quot;version&quot; : 0} and update: { &quot;version&quot; : 1, &quot;productId&quot; : 1, &quot;recommendationId&quot; : 2, &quot;author&quot; : &quot;a1&quot;, &quot;rating&quot; : 3, &quot;content&quot; : &quot;c&quot;, &quot;_class&quot; : &quot;io.locngo.learning.microservices.recommendation.service.persistence.RecommendationEntity&quot;} in collection: recommendation
+2021-02-06 11:51:12.278 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Calling update using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;601e204089ab1a55ec58e03a&quot;}, &quot;version&quot; : 0} and update: { &quot;version&quot; : 1, &quot;productId&quot; : 1, &quot;recommendationId&quot; : 2, &quot;author&quot; : &quot;a2&quot;, &quot;rating&quot; : 3, &quot;content&quot; : &quot;c&quot;, &quot;_class&quot; : &quot;io.locngo.learning.microservices.recommendation.service.persistence.RecommendationEntity&quot;} in collection: recommendation
+2021-02-06 11:51:12.279 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { &quot;id&quot; : &quot;601e204089ab1a55ec58e03a&quot;} fields: Document{{}} for class: class io.locngo.learning.microservices.recommendation.service.persistence.RecommendationEntity in collection: recommendation
+2021-02-06 11:51:12.280 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;601e204089ab1a55ec58e03a&quot;}} fields: {} in db.collection: recommendation-db.recommendation
+2021-02-06 11:51:12.283 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Remove using query: {} in collection: recommendation.
+2021-02-06 11:51:12.284 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendation
+2021-02-06 11:51:12.285 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendation
+2021-02-06 11:51:12.286 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { &quot;id&quot; : &quot;601e204089ab1a55ec58e03c&quot;} fields: Document{{}} for class: class io.locngo.learning.microservices.recommendation.service.persistence.RecommendationEntity in collection: recommendation
+2021-02-06 11:51:12.286 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;601e204089ab1a55ec58e03c&quot;}} fields: {} in db.collection: recommendation-db.recommendation
+2021-02-06 11:51:12.288 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Executing count: {} in collection: recommendation
+2021-02-06 11:51:12.297 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Remove using query: {} in collection: recommendation.
+2021-02-06 11:51:12.298 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendation
+2021-02-06 11:51:12.300 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Remove using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;601e204089ab1a55ec58e03d&quot;}, &quot;version&quot; : 0} in collection: recommendation.
+2021-02-06 11:51:12.302 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Executing count: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;601e204089ab1a55ec58e03d&quot;}} in collection: recommendation
+2021-02-06 11:51:12.305 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Remove using query: {} in collection: recommendation.
+2021-02-06 11:51:12.306 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [version, productId, recommendationId, author, rating, content, _class] in collection: recommendation
+2021-02-06 11:51:12.308 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Calling update using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;601e204089ab1a55ec58e03e&quot;}, &quot;version&quot; : 0} and update: { &quot;version&quot; : 1, &quot;productId&quot; : 1, &quot;recommendationId&quot; : 2, &quot;author&quot; : &quot;a2&quot;, &quot;rating&quot; : 3, &quot;content&quot; : &quot;c&quot;, &quot;_class&quot; : &quot;io.locngo.learning.microservices.recommendation.service.persistence.RecommendationEntity&quot;} in collection: recommendation
+2021-02-06 11:51:12.309 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { &quot;id&quot; : &quot;601e204089ab1a55ec58e03e&quot;} fields: Document{{}} for class: class io.locngo.learning.microservices.recommendation.service.persistence.RecommendationEntity in collection: recommendation
+2021-02-06 11:51:12.309 DEBUG 15420 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;601e204089ab1a55ec58e03e&quot;}} fields: {} in db.collection: recommendation-db.recommendation
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.7</a> at Feb 6, 2021 11:51:17 AM</p>
+</div>
+</div>
+</body>
+</html>

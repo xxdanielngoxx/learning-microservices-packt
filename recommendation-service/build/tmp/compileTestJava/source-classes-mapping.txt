@@ -1,2 +1,6 @@
-io/locngo/learning/microservices/recommendation/service/RecommendationApplicationTest.java
- io.locngo.learning.microservices.recommendation.service.RecommendationApplicationTest
+io/locngo/learning/microservices/recommendation/service/MapperTests.java
+ io.locngo.learning.microservices.recommendation.service.MapperTests
+io/locngo/learning/microservices/recommendation/service/PersistenceTests.java
+ io.locngo.learning.microservices.recommendation.service.PersistenceTests
+io/locngo/learning/microservices/recommendation/service/RecommendationEntityApplicationTest.java
+ io.locngo.learning.microservices.recommendation.service.RecommendationEntityApplicationTest

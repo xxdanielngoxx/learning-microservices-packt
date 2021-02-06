@@ -64,7 +64,9 @@ public class ProductCompositeApplication {
                 .apis(RequestHandlerSelectors.basePackage("io.locngo.learning.microservices.product.composite.service"))
                 .paths(PathSelectors.any())
                 .build()
+                .globalResponseMessage(RequestMethod.POST, Collections.emptyList())
                 .globalResponseMessage(RequestMethod.GET, Collections.emptyList())
+                .globalResponseMessage(RequestMethod.DELETE, Collections.emptyList())
                 .apiInfo(
                     new ApiInfo(
                             apiTitle,

@@ -3,7 +3,7 @@ io/locngo/learning/microservices/product/composite/service/services/ProductCompo
  io.locngo.learning.microservices.product.composite.service.services.ProductCompositeIntegration$1
  io.locngo.learning.microservices.product.composite.service.services.ProductCompositeIntegration$2
  io.locngo.learning.microservices.product.composite.service.services.ProductCompositeIntegration$3
-io/locngo/learning/microservices/product/composite/service/services/ProductCompositeServiceImpl.java
- io.locngo.learning.microservices.product.composite.service.services.ProductCompositeServiceImpl
 io/locngo/learning/microservices/product/composite/service/ProductCompositeApplication.java
  io.locngo.learning.microservices.product.composite.service.ProductCompositeApplication
+io/locngo/learning/microservices/product/composite/service/services/ProductCompositeServiceImpl.java
+ io.locngo.learning.microservices.product.composite.service.services.ProductCompositeServiceImpl

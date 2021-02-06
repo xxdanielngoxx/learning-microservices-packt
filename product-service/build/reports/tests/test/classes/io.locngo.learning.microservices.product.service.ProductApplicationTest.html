@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">4</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.447s</div>
+<div class="counter">0.415s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,23 +78,28 @@
 </tr>
 </thead>
 <tr>
-<td class="success">getProductById</td>
-<td class="success">0.393s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">getProductInvalidParameterNegativeValue</td>
+<td class="success">deleteProduct</td>
 <td class="success">0.022s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">getProductById</td>
+<td class="success">0.334s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getProductInvalidParameterNegativeValue</td>
+<td class="success">0.029s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">getProductInvalidParameterString</td>
-<td class="success">0.026s</td>
+<td class="success">0.023s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getProductNotFound</td>
-<td class="success">0.006s</td>
+<td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,37 +107,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>18:02:31.172 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.178 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-18:02:31.184 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-18:02:31.215 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-18:02:31.228 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest], using SpringBootContextLoader
-18:02:31.232 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest]: class path resource [io/locngo/learning/microservices/product/service/ProductApplicationTest-context.xml] does not exist
-18:02:31.232 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest]: class path resource [io/locngo/learning/microservices/product/service/ProductApplicationTestContext.groovy] does not exist
-18:02:31.232 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-18:02:31.233 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest]: ProductApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-18:02:31.270 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.325 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\master_java\learning-microservices\product-service\build\classes\java\main\io\locngo\learning\microservices\product\service\ProductApplication.class]
-18:02:31.326 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.locngo.learning.microservices.product.service.ProductApplication for test class io.locngo.learning.microservices.product.service.ProductApplicationTest
-18:02:31.408 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [io.locngo.learning.microservices.product.service.ProductApplicationTest]: using defaults.
-18:02:31.408 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-18:02:31.415 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
-18:02:31.416 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-18:02:31.416 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-18:02:31.416 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7a0d91a8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@49287298, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@42b71a6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b084389, org.springframework.test.context.event.EventPublishingTestExecutionListener@5d1e1b91, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@57280e18, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@8d1e31a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1ccfd82, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2c23acb9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3b6c3feb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3c22c2af]
-18:02:31.418 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.419 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.420 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.420 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.421 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.421 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.421 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.421 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.426 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@573aa88a testClass = ProductApplicationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@73c28c5d testClass = ProductApplicationTest, locations = '{}', classes = '{class io.locngo.learning.microservices.product.service.ProductApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@645d0301, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@65c26d34, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1989edb1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13d8b2f3, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@46bd5a9c, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@60468be3], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
-18:02:31.428 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.428 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.locngo.learning.microservices.product.service.ProductApplicationTest]
-18:02:31.431 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@573aa88a testClass = ProductApplicationTest, testInstance = io.locngo.learning.microservices.product.service.ProductApplicationTest@57640226, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@73c28c5d testClass = ProductApplicationTest, locations = '{}', classes = '{class io.locngo.learning.microservices.product.service.ProductApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@645d0301, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@65c26d34, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1989edb1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13d8b2f3, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@46bd5a9c, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@60468be3], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
-18:02:31.447 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+<pre>2021-02-06 11:40:30.448  INFO 13112 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest], using SpringBootContextLoader
+2021-02-06 11:40:30.449  INFO 13112 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-06 11:40:30.449  INFO 13112 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [io.locngo.learning.microservices.product.service.ProductApplicationTest]: ProductApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-06 11:40:30.451  INFO 13112 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration io.locngo.learning.microservices.product.service.ProductApplication for test class io.locngo.learning.microservices.product.service.ProductApplicationTest
+2021-02-06 11:40:30.454  INFO 13112 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-06 11:40:30.454  INFO 13112 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2bdc24fb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2a23cfb5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1aa6c5f4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@256f98f3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6f5e8b59, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bb4bf60, org.springframework.test.context.event.EventPublishingTestExecutionListener@77114887, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2e60fe96, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@35ffbc40, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4bce5a20, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@36e666ae, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1f5baaaa, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@570e18bd]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -142,17 +122,81 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.3.8.RELEASE)
 
-2021-02-04 18:02:31.704  INFO 20028 --- [    Test worker] i.l.l.m.p.s.ProductApplicationTest       : Starting ProductApplicationTest on LAPTOP-J4BOEGNR with PID 20028 (started by ASUS in D:\master_java\learning-microservices\product-service)
-2021-02-04 18:02:31.704 DEBUG 20028 --- [    Test worker] i.l.l.m.p.s.ProductApplicationTest       : Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-02-04 18:02:31.705  INFO 20028 --- [    Test worker] i.l.l.m.p.s.ProductApplicationTest       : No active profile set, falling back to default profiles: default
-2021-02-04 18:02:33.003  INFO 20028 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
-2021-02-04 18:02:34.079  INFO 20028 --- [    Test worker] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 57157
-2021-02-04 18:02:34.091  INFO 20028 --- [    Test worker] i.l.l.m.p.s.ProductApplicationTest       : Started ProductApplicationTest in 2.642 seconds (JVM running for 3.729)
-2021-02-04 18:02:34.422 DEBUG 20028 --- [ctor-http-nio-3] i.l.l.m.p.s.services.ProductServiceImpl  : /product return the found product for productId=1
-2021-02-04 18:02:34.525 DEBUG 20028 --- [ctor-http-nio-3] i.l.l.m.p.s.services.ProductServiceImpl  : /product return the found product for productId=-1
-2021-02-04 18:02:34.532 DEBUG 20028 --- [ctor-http-nio-3] l.m.u.h.GlobalControllerExceptionHandler : Returning HTTP status: 422 UNPROCESSABLE_ENTITY for path, message: Invalid productId: -1
-2021-02-04 18:02:34.574 DEBUG 20028 --- [ctor-http-nio-3] i.l.l.m.p.s.services.ProductServiceImpl  : /product return the found product for productId=13
-2021-02-04 18:02:34.575 DEBUG 20028 --- [ctor-http-nio-3] l.m.u.h.GlobalControllerExceptionHandler : Returning HTTP status: 404 NOT_FOUND for path, message: No product found for productId: 13
+2021-02-06 11:40:30.479  INFO 13112 --- [    Test worker] i.l.l.m.p.s.ProductApplicationTest       : Starting ProductApplicationTest on LAPTOP-J4BOEGNR with PID 13112 (started by ASUS in D:\master_java\learning-microservices\product-service)
+2021-02-06 11:40:30.479 DEBUG 13112 --- [    Test worker] i.l.l.m.p.s.ProductApplicationTest       : Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
+2021-02-06 11:40:30.479  INFO 13112 --- [    Test worker] i.l.l.m.p.s.ProductApplicationTest       : No active profile set, falling back to default profiles: default
+2021-02-06 11:40:30.770  INFO 13112 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-06 11:40:30.777  INFO 13112 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 1 MongoDB repository interfaces.
+2021-02-06 11:40:31.158  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2021-02-06 11:40:31.205  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.204+0700 I CONTROL  [initandlisten] MongoDB starting : pid=19980 port=51372 dbpath=C:\Users\ASUS\AppData\Local\Temp\embedmongo-db-ef79f6ab-f28c-4daa-b630-12137dde0f41 64-bit host=LAPTOP-J4BOEGNR
+2021-02-06 11:40:31.205  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.205+0700 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2021-02-06 11:40:31.205  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.205+0700 I CONTROL  [initandlisten] db version v3.5.5
+2021-02-06 11:40:31.205  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.205+0700 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2021-02-06 11:40:31.205  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.205+0700 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-02-06 11:40:31.206  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.205+0700 I CONTROL  [initandlisten] modules: none
+2021-02-06 11:40:31.206  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.205+0700 I CONTROL  [initandlisten] build environment:
+2021-02-06 11:40:31.206  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.205+0700 I CONTROL  [initandlisten]     distarch: x86_64
+2021-02-06 11:40:31.206  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.205+0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-02-06 11:40:31.206  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.205+0700 I CONTROL  [initandlisten] options: { net: { bindIp: &quot;127.0.0.1&quot;, http: { enabled: false }, port: 51372 }, security: { authorization: &quot;disabled&quot; }, storage: { dbPath: &quot;C:\Users\ASUS\AppData\Local\Temp\embedmongo-db-ef79f6ab-f28c-4daa-b630-12137dde0f41&quot;, journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2021-02-06 11:40:31.206  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.206+0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=11701M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2021-02-06 11:40:31.258  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.258+0700 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2021-02-06 11:40:31.258  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.258+0700 I CONTROL  [initandlisten] 
+2021-02-06 11:40:31.258  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.258+0700 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2021-02-06 11:40:31.258  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.258+0700 I CONTROL  [initandlisten] **       Not recommended for production.
+2021-02-06 11:40:31.258  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.258+0700 I CONTROL  [initandlisten] 
+2021-02-06 11:40:31.488  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.489+0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/ASUS/AppData/Local/Temp/embedmongo-db-ef79f6ab-f28c-4daa-b630-12137dde0f41/diagnostic.data'
+2021-02-06 11:40:31.543  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.544+0700 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: &quot;incompatible_with_version_32&quot;, ns: &quot;admin.system.version&quot; }
+2021-02-06 11:40:31.543  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.544+0700 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2021-02-06 11:40:31.548  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.548+0700 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2021-02-06 11:40:31.549  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.549+0700 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2021-02-06 11:40:31.549  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.550+0700 I NETWORK  [thread1] waiting for connections on port 51372
+2021-02-06 11:40:31.550  INFO 13112 --- [    Test worker] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@505b4129
+2021-02-06 11:40:31.554  INFO 13112 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:51372], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-06 11:40:31.555  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.555+0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:51375 #1 (1 connection now open)
+2021-02-06 11:40:31.555  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:31.555+0700 I NETWORK  [conn1] received client metadata from 127.0.0.1:51375 conn1: { driver: { name: &quot;mongo-java-driver|sync|spring-boot&quot;, version: &quot;4.0.5&quot; }, os: { type: &quot;Windows&quot;, name: &quot;Windows 10&quot;, architecture: &quot;amd64&quot;, version: &quot;10.0&quot; }, platform: &quot;Java/Oracle Corporation/1.8.0_271-b09&quot; }
+2021-02-06 11:40:31.556  INFO 13112 --- [localhost:51372] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:1}] to localhost:51372
+2021-02-06 11:40:31.556  INFO 13112 --- [localhost:51372] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:51372, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=222600}
+2021-02-06 11:40:32.049  INFO 13112 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-02-06 11:40:32.918  INFO 13112 --- [    Test worker] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 51402
+2021-02-06 11:40:32.920  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:32.920+0700 I NETWORK  [thread1] connection accepted from 127.0.0.1:51403 #2 (2 connections now open)
+2021-02-06 11:40:32.920  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:32.920+0700 I NETWORK  [conn2] received client metadata from 127.0.0.1:51403 conn2: { driver: { name: &quot;mongo-java-driver|sync|spring-boot&quot;, version: &quot;4.0.5&quot; }, os: { type: &quot;Windows&quot;, name: &quot;Windows 10&quot;, architecture: &quot;amd64&quot;, version: &quot;10.0&quot; }, platform: &quot;Java/Oracle Corporation/1.8.0_271-b09&quot; }
+2021-02-06 11:40:32.921  INFO 13112 --- [    Test worker] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:2}] to localhost:51372
+2021-02-06 11:40:32.972  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:32.972+0700 I INDEX    [conn2] build index on: product-db.products properties: { v: 2, unique: true, key: { productId: 1 }, name: &quot;productId&quot;, ns: &quot;product-db.products&quot; }
+2021-02-06 11:40:32.972  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:32.972+0700 I INDEX    [conn2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2021-02-06 11:40:32.977  INFO 13112 --- [       Thread-8] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-02-06T11:40:32.977+0700 I INDEX    [conn2] build index done.  scanned 0 total records. 0 secs
+2021-02-06 11:40:32.983  INFO 13112 --- [    Test worker] i.l.l.m.p.s.ProductApplicationTest       : Started ProductApplicationTest in 2.526 seconds (JVM running for 5.81)
+2021-02-06 11:40:33.016 DEBUG 13112 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Remove using query: {} in collection: products.
+2021-02-06 11:40:33.275 DEBUG 13112 --- [ctor-http-nio-3] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [version, productId, name, weight, _class] in collection: products
+2021-02-06 11:40:33.276 DEBUG 13112 --- [ctor-http-nio-3] i.l.l.m.p.s.services.ProductServiceImpl  : createProduct: entity created for productId: 1
+2021-02-06 11:40:33.298 DEBUG 13112 --- [    Test worker] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { &quot;productId&quot; : 1}, Fields: {}, Sort: {}
+2021-02-06 11:40:33.299 DEBUG 13112 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : find using query: { &quot;productId&quot; : 1} fields: Document{{}} for class: class io.locngo.learning.microservices.product.service.persistence.ProductEntity in collection: products
+2021-02-06 11:40:33.312 DEBUG 13112 --- [ctor-http-nio-3] i.l.l.m.p.s.services.ProductServiceImpl  : /product return the found product for productId=1
+2021-02-06 11:40:33.312 DEBUG 13112 --- [ctor-http-nio-3] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { &quot;productId&quot; : 1}, Fields: {}, Sort: {}
+2021-02-06 11:40:33.313 DEBUG 13112 --- [ctor-http-nio-3] o.s.data.mongodb.core.MongoTemplate      : find using query: { &quot;productId&quot; : 1} fields: Document{{}} for class: class io.locngo.learning.microservices.product.service.persistence.ProductEntity in collection: products
+2021-02-06 11:40:33.314 DEBUG 13112 --- [ctor-http-nio-3] i.l.l.m.p.s.services.ProductServiceImpl  : getProduct: found productId: 1
+2021-02-06 11:40:33.351 DEBUG 13112 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Remove using query: {} in collection: products.
+2021-02-06 11:40:33.354 DEBUG 13112 --- [ctor-http-nio-3] i.l.l.m.p.s.services.ProductServiceImpl  : /product return the found product for productId=-1
+2021-02-06 11:40:33.368 DEBUG 13112 --- [ctor-http-nio-3] l.m.u.h.GlobalControllerExceptionHandler : Returning HTTP status: 422 UNPROCESSABLE_ENTITY for path, message: Invalid productId: -1
+2021-02-06 11:40:33.379 DEBUG 13112 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Remove using query: {} in collection: products.
+2021-02-06 11:40:33.382 DEBUG 13112 --- [ctor-http-nio-3] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [version, productId, name, weight, _class] in collection: products
+2021-02-06 11:40:33.383 DEBUG 13112 --- [ctor-http-nio-3] i.l.l.m.p.s.services.ProductServiceImpl  : createProduct: entity created for productId: 1
+2021-02-06 11:40:33.385 DEBUG 13112 --- [    Test worker] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { &quot;productId&quot; : 1}, Fields: {}, Sort: {}
+2021-02-06 11:40:33.385 DEBUG 13112 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : find using query: { &quot;productId&quot; : 1} fields: Document{{}} for class: class io.locngo.learning.microservices.product.service.persistence.ProductEntity in collection: products
+2021-02-06 11:40:33.389 DEBUG 13112 --- [ctor-http-nio-3] i.l.l.m.p.s.services.ProductServiceImpl  : deleteProduct: tries to delete an entity with productId: 1
+2021-02-06 11:40:33.389 DEBUG 13112 --- [ctor-http-nio-3] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { &quot;productId&quot; : 1}, Fields: {}, Sort: {}
+2021-02-06 11:40:33.389 DEBUG 13112 --- [ctor-http-nio-3] o.s.data.mongodb.core.MongoTemplate      : find using query: { &quot;productId&quot; : 1} fields: Document{{}} for class: class io.locngo.learning.microservices.product.service.persistence.ProductEntity in collection: products
+2021-02-06 11:40:33.391 DEBUG 13112 --- [ctor-http-nio-3] o.s.data.mongodb.core.MongoTemplate      : Remove using query: { &quot;_id&quot; : { &quot;$oid&quot; : &quot;601e1dc10e66a3585a172765&quot;}, &quot;version&quot; : 0} in collection: products.
+2021-02-06 11:40:33.394 DEBUG 13112 --- [    Test worker] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { &quot;productId&quot; : 1}, Fields: {}, Sort: {}
+2021-02-06 11:40:33.394 DEBUG 13112 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : find using query: { &quot;productId&quot; : 1} fields: Document{{}} for class: class io.locngo.learning.microservices.product.service.persistence.ProductEntity in collection: products
+2021-02-06 11:40:33.397 DEBUG 13112 --- [ctor-http-nio-3] i.l.l.m.p.s.services.ProductServiceImpl  : deleteProduct: tries to delete an entity with productId: 1
+2021-02-06 11:40:33.397 DEBUG 13112 --- [ctor-http-nio-3] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { &quot;productId&quot; : 1}, Fields: {}, Sort: {}
+2021-02-06 11:40:33.398 DEBUG 13112 --- [ctor-http-nio-3] o.s.data.mongodb.core.MongoTemplate      : find using query: { &quot;productId&quot; : 1} fields: Document{{}} for class: class io.locngo.learning.microservices.product.service.persistence.ProductEntity in collection: products
+2021-02-06 11:40:33.402 DEBUG 13112 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Remove using query: {} in collection: products.
+2021-02-06 11:40:33.426 DEBUG 13112 --- [    Test worker] o.s.data.mongodb.core.MongoTemplate      : Remove using query: {} in collection: products.
+2021-02-06 11:40:33.428 DEBUG 13112 --- [ctor-http-nio-3] i.l.l.m.p.s.services.ProductServiceImpl  : /product return the found product for productId=13
+2021-02-06 11:40:33.429 DEBUG 13112 --- [ctor-http-nio-3] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { &quot;productId&quot; : 13}, Fields: {}, Sort: {}
+2021-02-06 11:40:33.429 DEBUG 13112 --- [ctor-http-nio-3] o.s.data.mongodb.core.MongoTemplate      : find using query: { &quot;productId&quot; : 13} fields: Document{{}} for class: class io.locngo.learning.microservices.product.service.persistence.ProductEntity in collection: products
+2021-02-06 11:40:33.430 DEBUG 13112 --- [ctor-http-nio-3] l.m.u.h.GlobalControllerExceptionHandler : Returning HTTP status: 404 NOT_FOUND for path, message: No product found for productId: 13
 </pre>
 </span>
 </div>
@@ -164,7 +208,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7</a> at Feb 4, 2021 6:02:36 PM</p>
+<a href="http://www.gradle.org">Gradle 6.7</a> at Feb 6, 2021 11:40:35 AM</p>
 </div>
 </div>
 </body>

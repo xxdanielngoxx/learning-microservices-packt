@@ -1,4 +1,10 @@
+io/locngo/learning/microservices/recommendation/service/persistence/RecommendationEntity.java
+ io.locngo.learning.microservices.recommendation.service.persistence.RecommendationEntity
+io/locngo/learning/microservices/recommendation/service/persistence/RecommendationRepository.java
+ io.locngo.learning.microservices.recommendation.service.persistence.RecommendationRepository
 io/locngo/learning/microservices/recommendation/service/services/RecommendationServiceImpl.java
  io.locngo.learning.microservices.recommendation.service.services.RecommendationServiceImpl
+io/locngo/learning/microservices/recommendation/service/services/RecommendationMapper.java
+ io.locngo.learning.microservices.recommendation.service.services.RecommendationMapper
 io/locngo/learning/microservices/recommendation/service/RecommendationApplication.java
  io.locngo.learning.microservices.recommendation.service.RecommendationApplication
